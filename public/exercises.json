@@ -1,0 +1,235 @@
+{
+    "Pecho": [
+      {
+        "id": 1,
+        "nombre": "Press de banca",
+        "imagen": "/images/Pecho/Pressclasico.jpg",
+        "recomendacion": "Mantén la espalda firme y baja la barra lentamente."
+      },
+      {
+        "id": 2,
+        "nombre": "Press de banca declinado",
+        "imagen": "/images/Pecho/Pressdeclinado.jpg",
+        "recomendacion": "Mantén el core activado y baja el pecho cerca del suelo."
+      },
+      {
+        "id": 3,
+        "nombre": "Press con mancuernas",
+        "imagen": "/images/Pecho/Pressconmancuernas.jpg",
+        "recomendacion": "No bloquees los codos al extender los brazos."
+      },
+      {
+        "id": 4,
+        "nombre": "Press inclinado",
+        "imagen": "/images/Pecho/Pressinclinado.jpg",
+        "recomendacion": "Controla la bajada para evitar lesiones en el hombro."
+      },
+      {
+        "id": 5,
+        "nombre": "Fondos en paralelas",
+        "imagen": "/images/Pecho/Fondos.jpg",
+        "recomendacion": "Inclínate ligeramente hacia adelante para trabajar el pecho."
+      },
+      {
+        "id": 6,
+        "nombre": "Aperturas",
+        "imagen": "/images/Pecho/Aperturas.jpg",
+        "recomendacion": "Ajusta el asiento a la altura de tu pecho."
+      },
+      {
+        "id": 7,
+        "nombre": "Planchas o lagartijas",
+        "imagen": "/images/Pecho/Planchas.jpg",
+        "recomendacion": "Mantén tensión constante en todo el movimiento."
+      },
+      {
+        "id": 8,
+        "nombre": "Pullover con mancuerna",
+        "imagen": "/images/Pecho/Pullover.jpg",
+        "recomendacion": "Evita arquear demasiado la espalda."
+      }
+    ],
+    "Espalda": [
+      {
+        "id": 9,
+        "nombre": "Dominadas",
+        "imagen": "/images/Espalda/Dominadas.jpg",
+        "recomendacion": "Mantén el core firme y no balancees el cuerpo."
+      },
+      {
+        "id": 10,
+        "nombre": "Remo con barra",
+        "imagen": "/images/Espalda/Remoconbarra.jpg",
+        "recomendacion": "Flexiona ligeramente las rodillas y mantén la espalda recta."
+      },
+      {
+        "id": 11,
+        "nombre": "Extensión en polea",
+        "imagen": "/images/Espalda/Extensionpolea.jpg",
+        "recomendacion": "No encorves la espalda al levantar la barra."
+      },
+      {
+        "id": 12,
+        "nombre": "Remo con mancuerna",
+        "imagen": "/images/Espalda/Remounlado.jpg",
+        "recomendacion": "Apoya la rodilla en un banco y tira con control."
+      },
+      {
+        "id": 13,
+        "nombre": "Pull-over en polea",
+        "imagen": "/images/Espalda/Pullover.jpg",
+        "recomendacion": "Evita doblar los codos en exceso."
+      },
+      {
+        "id": 14,
+        "nombre": "Polea baja",
+        "imagen": "/images/Espalda/Poleabaja.jpg",
+        "recomendacion": "Lleva la barra hacia la parte superior del pecho."
+      },
+      {
+        "id": 15,
+        "nombre": "Remo caballito",
+        "imagen": "/images/Espalda/Remocaballito.jpg",
+        "recomendacion": "Mantén el cuerpo en línea recta durante el movimiento."
+      }
+    ],
+    "Brazo": [
+      {
+        "id": 16,
+        "nombre": "(Antebrazos) Flexiones",
+        "imagen": "/images/Brazo/Aflexionesantebrazo.jpg",
+        "recomendacion": "Evita balancear los codos hacia adelante."
+      },
+      {
+        "id": 17,
+        "nombre": "(Antebrazo) Flexiones frontales",
+        "imagen": "/images/Brazo/Aflexionesfrontales.jpg",
+        "recomendacion": "Hazlo de manera alternada para mejor control."
+      },
+      {
+        "id": 18,
+        "nombre": "(Bíceps) Curl con barra",
+        "imagen": "/images/Brazo/Bcurlconbarra.jpg",
+        "recomendacion": "Mantén la muñeca neutra en todo momento."
+      },
+      {
+        "id": 19,
+        "nombre": "(Bíceps) Curl con apoyo",
+        "imagen": "/images/Brazo/Bcurlconapoyoenbanco.jpg",
+        "recomendacion": "No bloquees los codos en la extensión completa."
+      },
+      {
+        "id": 20,
+        "nombre": "(Bíceps) Curl concentrado",
+        "imagen": "/images/Brazo/Bcurlconcentrado.jpg",
+        "recomendacion": "Mantén los codos pegados al cuerpo."
+      },
+      {
+        "id": 21,
+        "nombre": "(Tripces) Press francés",
+        "imagen": "/images/Brazo/Tpressfrances.jpg",
+        "recomendacion": "Controla la bajada para no forzar los codos."
+      },
+      {
+        "id": 22,
+        "nombre": "(Tripces) Press francés con mancuernas",
+        "imagen": "/images/Brazo/Tpressfrancesmancuernas.jpg",
+        "recomendacion": "Mantén los hombros estables y baja con control."
+      },
+      {
+        "id": 23,
+        "nombre": "(Tripces) Extensión hacia atrás",
+        "imagen": "/images/Brazo/Tpatadasconmancuerna.jpg",
+        "recomendacion": "Sube lentamente para máxima contracción."
+      },
+      {
+        "id": 24,
+        "nombre": "(Tripces) Fondos en paralelas",
+        "imagen": "/images/Brazo/Tfondosenparalelas.jpg",
+        "recomendacion": "Mantén los pies firmes y la espalda recta."
+      },
+      {
+        "id": 25,
+        "nombre": "(Tripces) Extensiones con mancuerna",
+        "imagen": "/images/Brazo/Textensionesmancuernasatras.jpg",
+        "recomendacion": "Evita abrir los codos hacia afuera."
+      },
+      {
+        "id": 26,
+        "nombre": "(Tripces) Extensiones en polea",
+        "imagen": "/images/Brazo/Textensionesenpolea.jpg",
+        "recomendacion": "Asegúrate de trabajar también el antebrazo."
+      }
+    ],
+    "Pierna": [
+      {
+        "id": 27,
+        "nombre": "Sentadillas",
+        "imagen": "/images/Pierna/Sentadilla.jpg",
+        "recomendacion": "No sobrepases las puntas de los pies con las rodillas."
+      },
+      {
+        "id": 28,
+        "nombre": "Peso muerto",
+        "imagen": "/images/Pierna/Pesomuerto.jpg",
+        "recomendacion": "No bloquees las rodillas al extender."
+      },
+      {
+        "id": 29,
+        "nombre": "Zancadas",
+        "imagen": "/images/Pierna/Zancadastijeras.jpg",
+        "recomendacion": "Mantén el torso recto en cada paso."
+      },
+      {
+        "id": 30,
+        "nombre": "Zancadas caminando",
+        "imagen": "/images/Pierna/Zancadascaminando.jpg",
+        "recomendacion": "Baja hasta sentir el estiramiento en isquiotibiales."
+      },
+      {
+        "id": 31,
+        "nombre": "Desplantes búlgaros",
+        "imagen": "/images/Pierna/Bulgaras.jpg",
+        "recomendacion": "No bloquees la rodilla en la extensión."
+      },
+      {
+        "id": 32,
+        "nombre": "Escalonadas",
+        "imagen": "/images/Pierna/Escalon.jpg",
+        "recomendacion": "Hazlo lento para máxima activación."
+      },
+      {
+        "id": 33,
+        "nombre": "Elevaciones de talones para pantorrilas",
+        "imagen": "/images/Pierna/Pantorrillas.jpg",
+        "recomendacion": "Haz una pausa arriba para mejor contracción."
+      }
+    ],
+    "Abs": [
+      {
+        "id": 34,
+        "nombre": "Crunch en polea alta",
+        "imagen": "/images/Abs/Contraccionesenpolea.jpg",
+        "recomendacion": "No tires del cuello al subir."
+      },
+      {
+        "id": 35,
+        "nombre": "Crunch",
+        "imagen": "/images/Abs/ContraccionesTumbado.jpg",
+        "recomendacion": "Mantén la fuerza concentrada en la parte superior del abdomen"
+      },
+      {
+        "id": 36,
+        "nombre": "Elevación de tronco",
+        "imagen": "/images/Abs/Elevaciondetronco.jpg",
+        "recomendacion": "Controla el movimiento y contrae, cuida la espalda baja"
+      },
+      {
+        "id": 37,
+        "nombre": "Elevaciones de piernas",
+        "imagen": "/images/Abs/Elevacionesdepierna.jpg",
+        "recomendacion": "Mantén la tensión en todo el movimiento."
+      }
+    ]
+  }
+  
