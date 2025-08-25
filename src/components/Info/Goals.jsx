@@ -7,17 +7,21 @@ const Goals = () => {
   const touchStartX = useRef(null);
   const intervalRef = useRef(null);
 
-  // 🔥 Autoplay cada 6s
   useEffect(() => {
     startAutoPlay();
     return () => stopAutoPlay();
   }, []);
 
+  // Pre-carga siguiente imagen
+  useEffect(() => {
+    const nextIndex = (index + 1) % carrouselData.length;
+    const img = new Image();
+    img.src = carrouselData[nextIndex].img;
+  }, [index]);
+
   const startAutoPlay = () => {
     stopAutoPlay();
-    intervalRef.current = setInterval(() => {
-      nextCard();
-    }, 6000);
+    intervalRef.current = setInterval(() => nextCard(), 6000);
   };
 
   const stopAutoPlay = () => {
@@ -29,12 +33,9 @@ const Goals = () => {
   };
 
   const prevCard = () => {
-    setIndex((prev) =>
-      prev === 0 ? carrouselData.length - 1 : prev - 1
-    );
+    setIndex((prev) => (prev === 0 ? carrouselData.length - 1 : prev - 1));
   };
 
-  // 👉 Swipe en móviles
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -43,12 +44,8 @@ const Goals = () => {
     if (!touchStartX.current) return;
     const touchEndX = e.changedTouches[0].clientX;
     const diff = touchStartX.current - touchEndX;
-
-    if (diff > 50) {
-      nextCard(); // swipe izquierda → siguiente
-    } else if (diff < -50) {
-      prevCard(); // swipe derecha → anterior
-    }
+    if (diff > 50) nextCard();
+    else if (diff < -50) prevCard();
     touchStartX.current = null;
   };
 
@@ -57,7 +54,6 @@ const Goals = () => {
       id="about"
       className="py-20 px-6 md:px-20 lg:px-32 bg-[var(--color-bg)] text-[var(--color-text)] transition-colors"
     >
-      {/* Título con animación moderna */}
       <motion.h2
         className="text-4xl md:text-5xl font-bold text-center mb-6"
         style={{ color: "var(--color-primary)" }}
@@ -79,13 +75,11 @@ const Goals = () => {
         pilares que guían nuestro enfoque.
       </motion.p>
 
-      {/* Carrusel */}
       <div
         className="relative flex justify-center items-center"
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
       >
-        {/* Botón Izquierdo */}
         <button
           onClick={() => {
             prevCard();
@@ -96,7 +90,6 @@ const Goals = () => {
           ‹
         </button>
 
-        {/* Contenedor */}
         <div className="w-full max-w-4xl h-[500px] overflow-hidden relative rounded-3xl shadow-2xl border border-gray-300 dark:border-gray-700 bg-[var(--color-bg)]">
           <AnimatePresence mode="wait">
             {carrouselData.map(
@@ -110,16 +103,21 @@ const Goals = () => {
                     exit={{ opacity: 0, x: -100 }}
                     transition={{ duration: 0.6 }}
                   >
-                    {/* Imagen con efecto parallax */}
-                    <motion.div
-                      className="w-full md:w-1/2 h-60 md:h-full bg-cover bg-center"
-                      style={{ backgroundImage: `url(${item.img})` }}
-                      initial={{ scale: 1.1 }}
-                      animate={{ scale: 1 }}
-                      transition={{ duration: 1.2, ease: "easeOut" }}
-                    />
+                    {/* Imagen con Lazy Loading + Placeholder */}
+                    <motion.div className="w-full md:w-1/2 h-60 md:h-full overflow-hidden relative">
+                      <img
+                        src={item.imgPlaceholder} // versión pequeña/blur
+                        alt="placeholder"
+                        className="w-full h-full object-cover absolute filter blur-md scale-110"
+                      />
+                      <img
+                        src={item.img} // URL externa
+                        alt={item.title}
+                        className="w-full h-full object-cover relative"
+                        loading="lazy"
+                      />
+                    </motion.div>
 
-                    {/* Texto con animación */}
                     <motion.div
                       className="w-full md:w-1/2 p-8 flex flex-col justify-center bg-[var(--color-bg)]"
                       initial={{ opacity: 0, y: 20 }}
@@ -139,7 +137,6 @@ const Goals = () => {
           </AnimatePresence>
         </div>
 
-        {/* Botón Derecho */}
         <button
           onClick={() => {
             nextCard();
@@ -151,7 +148,6 @@ const Goals = () => {
         </button>
       </div>
 
-      {/* Indicadores */}
       <div className="flex justify-center mt-8 gap-3">
         {carrouselData.map((_, i) => (
           <span

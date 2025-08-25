@@ -126,37 +126,37 @@
       },
       {
         "id": 21,
-        "nombre": "(Tripces) Press francés",
+        "nombre": "(Trípces) Press francés",
         "imagen": "/images/Brazo/Tpressfrances.jpg",
         "recomendacion": "Controla la bajada para no forzar los codos."
       },
       {
         "id": 22,
-        "nombre": "(Tripces) Press francés con mancuernas",
+        "nombre": "(Trípces) Press francés con mancuernas",
         "imagen": "/images/Brazo/Tpressfrancesmancuernas.jpg",
         "recomendacion": "Mantén los hombros estables y baja con control."
       },
       {
         "id": 23,
-        "nombre": "(Tripces) Extensión hacia atrás",
+        "nombre": "(Trípces) Extensión hacia atrás",
         "imagen": "/images/Brazo/Tpatadasconmancuerna.jpg",
         "recomendacion": "Sube lentamente para máxima contracción."
       },
       {
         "id": 24,
-        "nombre": "(Tripces) Fondos en paralelas",
+        "nombre": "(Trípces) Fondos en paralelas",
         "imagen": "/images/Brazo/Tfondosenparalelas.jpg",
         "recomendacion": "Mantén los pies firmes y la espalda recta."
       },
       {
         "id": 25,
-        "nombre": "(Tripces) Extensiones con mancuerna",
+        "nombre": "(Trípces) Extensiones con mancuerna",
         "imagen": "/images/Brazo/Textensionesmancuernasatras.jpg",
         "recomendacion": "Evita abrir los codos hacia afuera."
       },
       {
         "id": 26,
-        "nombre": "(Tripces) Extensiones en polea",
+        "nombre": "(Trípces) Extensiones en polea",
         "imagen": "/images/Brazo/Textensionesenpolea.jpg",
         "recomendacion": "Asegúrate de trabajar también el antebrazo."
       }

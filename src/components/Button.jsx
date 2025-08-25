@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import BackgroundParticles from "./BackgroundParticles";
 import { female, man } from "../Data/youtube";
+import { FaDumbbell } from "react-icons/fa";
 
 const HeroHeroYoutube = ({ to, children }) => {
   const navigate = useNavigate();
@@ -53,9 +54,39 @@ const HeroHeroYoutube = ({ to, children }) => {
         initial="hidden"
         animate="visible"
       >
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold drop-shadow-lg">
-          Explora la sección de ejercicios
-        </h1>
+      
+
+
+      <div className="flex flex-col gap-3 text-center px-6 md:px-16 lg:px-24 xl:px-32 py-10">
+  {/* Título principal con ícono */}
+  <div className="flex flex-wrap items-center justify-center gap-2 font-bold uppercase text-2xl sm:text-3xl lg:text-4xl xl:text-5xl tracking-tight">
+    {/* Icono de ejercicios */}
+    <FaDumbbell
+      className="drop-shadow-lg flex-shrink-0"
+      style={{ color: "var(--color-primary)" }}
+      size={36}
+    />
+    <p className="whitespace-nowrap" style={{ color: "var(--text-section)" }}>
+      Explora
+    </p>
+    <p
+      style={{ color: "var(--color-primary)" }}
+      className="whitespace-nowrap"
+    >
+      la sección de ejercicios
+    </p>
+  </div>
+
+  {/* Descripción */}
+  <p
+    className="max-w-2xl mx-auto text-base sm:text-lg lg:text-xl font-light leading-relaxed"
+    style={{ color: "var(--color-text-secondary)" }}
+  >
+    Selecciona una sección y explora ejercicios.
+  </p>
+</div>
+
+
 
       
 <motion.button
